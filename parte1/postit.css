@@ -1,0 +1,64 @@
+body {
+  font-family: "Indie Flower";
+  background-color: #656565;
+}
+
+.postit-container {
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+.postit {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: inset 0px -39px 55px -41px #000000, 14px 14px 9px -10px #000000;
+  box-shadow: inset 0px -39px 55px -41px #000000, 14px 14px 9px -10px #000000;
+  box-shadow: inset 0px -39px 55px -41px #000000, 14px 14px 9px -10px #000000;
+  box-shadow: inset 0px -39px 55px -41px #000000, 14px 14px 9px -10px #000000;
+}
+
+.postit h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.postit p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.yellow {
+  background-color: #f8f9c8;
+  transform: rotate(-5deg);
+}
+
+.green {
+  background-color: #b5dcb9;
+  transform: rotate(8deg);
+}
+
+.blue {
+  background-color: #c0bfe8;
+  transform: rotate(-8deg);
+}
+
+.postit-container > div:nth-of-type(8) {
+  transform: rotate(6deg);
+}
+
+.postit:hover,
+.postit-container > div:nth-of-type(8):hover {
+  transform: rotate(0deg);
+  transform: scale(1.2);
+  box-shadow: inset 0px -39px 55px -41px #000000, 14px 14px 27px 3px #000000;
+  box-shadow: inset 0px -39px 55px -41px #000000, 14px 14px 27px 3px #000000;
+  box-shadow: inset 0px -39px 55px -41px #000000, 14px 14px 27px 3px #000000;
+  box-shadow: inset 0px -39px 55px -41px #000000, 14px 14px 27px 3px #000000;
+}

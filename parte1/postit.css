@@ -15,6 +15,7 @@ body {
 .postit {
   width: 250px;
   height: 250px;
+  opacity: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -37,20 +38,36 @@ body {
 .yellow {
   background-color: #f8f9c8;
   transform: rotate(-5deg);
+  animation: upScale 500ms forwards;
 }
 
 .green {
   background-color: #b5dcb9;
   transform: rotate(8deg);
+  animation: upScale 500ms 500ms forwards;
 }
 
 .blue {
   background-color: #c0bfe8;
   transform: rotate(-8deg);
+  animation: upScale 500ms 1s forwards;
 }
 
+.postit-container > div:nth-of-type(2) {
+  animation: upScale 500ms 1.1s forwards;
+}
+.postit-container > div:nth-of-type(5) {
+  animation: upScale 500ms 600ms forwards;
+}
+.postit-container > div:nth-of-type(6) {
+  animation: upScale 900ms 600ms forwards;
+}
+.postit-container > div:nth-of-type(7) {
+  animation: upScale 500ms 300ms forwards;
+}
 .postit-container > div:nth-of-type(8) {
   transform: rotate(6deg);
+  animation: upScale 500ms 700ms forwards;
 }
 
 .postit:hover,
@@ -61,4 +78,15 @@ body {
   box-shadow: inset 0px -39px 55px -41px #000000, 14px 14px 27px 3px #000000;
   box-shadow: inset 0px -39px 55px -41px #000000, 14px 14px 27px 3px #000000;
   box-shadow: inset 0px -39px 55px -41px #000000, 14px 14px 27px 3px #000000;
+}
+
+@keyframes upScale {
+  from {
+    opacity: 0;
+    scale: 3;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }

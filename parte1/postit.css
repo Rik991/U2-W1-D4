@@ -38,18 +38,21 @@ body {
 .yellow {
   background-color: #f8f9c8;
   transform: rotate(-5deg);
+  transition: all 200ms;
   animation: upScale 500ms forwards;
 }
 
 .green {
   background-color: #b5dcb9;
   transform: rotate(8deg);
+  transition: all 200ms;
   animation: upScale 500ms 500ms forwards;
 }
 
 .blue {
   background-color: #c0bfe8;
   transform: rotate(-8deg);
+  transition: all 200ms;
   animation: upScale 500ms 1s forwards;
 }
 
